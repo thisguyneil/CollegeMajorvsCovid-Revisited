@@ -41,3 +41,7 @@ This data has some formatting I do not like including some blank cells, n/a answ
 4. I will start working on my college major column by dropping the rows that are blank or say either "Undecided" or "Dual Credit"
 5. The main part of the study is about nursing majors due to the high number of nursing majors at our college. I can easily create a function to just include nursing majors from the college major column, but I wanted to take this one step further and make a new column that would show whether or not the student is a STEM (science, technology, engineering or mathematics) major, this way I can vizualize if there is a difference between soft sciences and STEM in relation to the questions above. I will first create a list of the STEM majors covered in the study, then create a function that will create a new column and input the value of STEM or Non-STEM based off their college major in that new column. I really enjoy using the lambda function, especially in this scenario, because I can easily set the values in the STEMvsNon-STEM column based off the stem majors in the previously created list. I was originally getting a large amount of false positives because the responses in the spreadsheet had a space at the end of the response, which doesn't perfectly fit the function, so I found the strip() function and added it to my function and got it to work. 
 </p>
+
+# 3. Visualize the data
+
+<p>
