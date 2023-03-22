@@ -25,30 +25,5 @@ I believe that a college or university's top goal is to prepare students for the
 This project collected anonymous data from students from Union College of various grade levels, biological sex, and college majors and tested to see if there was any relation to the students college major and their perceived importance of Covid-19. Besides the basic demographic questions, most questions asked to the students are based off of the Likert scale that spans from "Not at all important, Slightly important , Somewhat important , Very important and Extremely important" and a few additional questions that ask True/False, Yes/No responses.  The question inventory is a custom inventory created by the study's author as there are very few related question inventories at the time of this study's creation. 
 </p>
 
-# 1. Read the Data In
 
-<p> 
-This section is to help clean up our responses, which are all stored in an external excel (xlsx) document called Raw_Study_Responses.xlsx in the assets folder. 
 
-1. I read the data in by using the pd.read_excel command and loaded it into a dataframe. I then displayed the headers of the file to show not only some of the original questions (which were stored in the headers) of the project, but also to make sure my data was read into the notebook correctly.
-</p>
-
-# 2. Clean the data
-
-<p> 
-This data has some formatting I do not like including some blank cells, n/a answers, and other data I do not want to be included in my analysis, so I will clean and format this data and save it to a new excel file.
-
-1. I wanted to shorten the names of my columns into a basic "question 1, question 2, etc" style formatting to make sure that when visualized later the code is not super long, plus I wanted to try out this batch renaming function for my columns, so I created a dictionary called "new_names" that linked the old column names to the new column names and used the "df.rename(columns)" function to rename my columns.
-2. There are questions in this study that I need to drop because they will not be used in this analysis. I can use the "df.drop" command and select multiple columns to drop.
-3. Those students who are uner 18 cannot accept an informed consent form (which was the first question and link in the study) without their parent/guardian's consent, so the few subjects who are under 18 I will remove those rows from the data. I can do this with a simple command to only show rows with the answer "Yes" in the column asking if they are at least 18.
-4. I will start working on my college major column by dropping the rows that are blank or say either "Undecided" or "Dual Credit"
-5. The main part of the study is about nursing majors due to the high number of nursing majors at our college. I can easily create a function to just include nursing majors from the college major column, but I wanted to take this one step further and make a new column that would show whether or not the student is a STEM (science, technology, engineering or mathematics) major, this way I can vizualize if there is a difference between soft sciences and STEM in relation to the questions above. I will first create a list of the STEM majors covered in the study, then create a function that will create a new column and input the value of STEM or Non-STEM based off their college major in that new column. I really enjoy using the lambda function, especially in this scenario, because I can easily set the values in the STEMvsNon-STEM column based off the stem majors in the previously created list. I was originally getting a large amount of false positives because the responses in the spreadsheet had a space at the end of the response, which doesn't perfectly fit the function, so I found the strip() function and added it to my function and got it to work. 
-</p>
-
-# 3. Visualize the data
-
-<p>
-
-1. Here is where we can load in our new data created from the cleaning data code block
-2. I made a simple pie chart to show the answers of nursing majors to question_2 (How important is taking proper precautions to prevent exposure to Covid-19 to you?). I created 2 dataframe objects that will be used a lot in the following graphs, one isolates the nursing majors and one that isolates non-nursing majors in the college major column. Counts comes in handy here to count up the responses to the questions and then graph them later. The actual pie graph I wanted included 1 number after the decimal.
-3. 
