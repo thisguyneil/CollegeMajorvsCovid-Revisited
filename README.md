@@ -15,8 +15,20 @@
 
 </p>
 
+# In this project I will:
+
+<p>
+
+1. Read my data into my Jupyter notebook and create a dataframe element to examine my data and its various elements like column titles, null values, data types, and my overall number of rows and columns.
+2. Clean my data by renaming several columns for visualization later, drop unneeded columns, drop unneeded responses and null values from those columns, create a new column based on specific criteria, and export all these changes to a new spreadsheet.
+3. Load my new spreadsheet into the notebook and visualize the data using both pie and bar charts. 
+
+</p>
+
+
 # About the project
 ## A simple analytical look at a psychology project for my Graduate Psychology program in 2021. 
+
 
 <p> 
 
