@@ -7,16 +7,13 @@
 <p> 
 
 1. Clone this repository to your machine from GITHUB to your local environment
+*If you are using Anaconda, open the web interface and navigate to this new repo and open the notebook file, otherwise follow the steps below*
 2. Navigate to this new repository through terminal in MacOs/Linux or command prompt in Windows
 3. Check to see you are in the correct location using 'ls' if you're on a Mac or Linux, if you are on windows use 'dir' and check to see if the output is the same as the files listed in this repository 
-4. If you are using Anaconda or the Anaconda interpreter then you are good to go, otherwise:
-
-*optional*
-- Create a virtual environment within your terminal, you will know this is successful if your terminal or command prompt displays "venv" in parenthesis 
-- Install the requirements using the command "pip install -r requirements.txt"
-- This project was created and executed through the anaconda interpreter, so there will be a large list of packages in the requirements.txt
-
-## Once all required packages are installed, open the .ipynb file 
+4. Create a virtual environment within your terminal, you will know this is successful if your terminal or command prompt displays "venv" in parenthesis 
+5. Install the requirements using the command "pip install -r requirements.txt"
+6. This project was created and executed through the anaconda interpreter, so there will be a large list of packages in the requirements.txt
+7. Once all required packages are installed, open the .ipynb file 
 
 </p>
 
